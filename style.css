@@ -176,7 +176,7 @@ nav .nav-link:hover
     left: max(calc(350px * 8), 100%); /* Adjusted spacing */
     top: 0;
     animation-name: scrollLeft;
-    animation-duration: 10s; /* Faster scrolling */
+    animation-duration: 12s; /* Faster scrolling */
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     padding: 1%; /* More spacing */
@@ -194,6 +194,7 @@ nav .nav-link:hover
 .country3 { animation-delay: calc(30s / 15 * (15 - 3) * -1); }
 .country4 { animation-delay: calc(30s / 15 * (15 - 4) * -1); }
 .country5 { animation-delay: calc(30s / 15 * (15 - 5) * -1); }
+.country6 { animation-delay: calc(30s / 15 * (15 - 6) * -1); }
 
 .country span {
     text-wrap: nowrap;
@@ -242,6 +243,11 @@ nav .nav-link:hover
     padding: 1rem 1rem;
 }
 
+.small-text {
+    font-size: 18px; /* Makes the text smaller */
+    color: #FF8C00; /* Adjusts the color to orange */
+}
+
 #travel-blogs .bgcard
 {
     position: relative;
@@ -267,22 +273,22 @@ background-image: url(./images/country-icons/3.jfif);
 
 #travel-blogs .bg-card3
 {
-    background-image: url(./images/stories/Fira\,\ Thera\,\ Greece.jpg);
+    background-image: url(./images/country-icons/ba3.jpg);
 }
 
 #travel-blogs .bg-card4
 {
-    background-image: url(./images/stories/Dubrovnik\,\ Croatia.jpg);
+    background-image: url(./images/country-icons/cab2.jpg);
 }
 
 #travel-blogs .bg-card5
 {
-    background-image: url(./images/stories/Singapore.jpg);
+    background-image: url(./images/country-icons/pia1.jpg);
 }
 
 #travel-blogs .bg-card6
 {
-    background-image: url(./images/stories/Paro\ Valley\,\ Bhutan.jpg);
+    background-image: url(./images/country-icons/boh1.jpg);
 }
 
 #travel-blogs .bgcard::before

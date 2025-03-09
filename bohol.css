@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url('images/country-icons/10.jpg') no-repeat center center/cover;
+    background: url('images/country-icons/bohb.jfif') no-repeat center center/cover;
+    color: #333;
     color: #333;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #FF6700; /* Orange */
+    background-color: #8B0000;
     padding: 10px;
     text-align: center;
 }
@@ -44,20 +45,19 @@ header {
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #FF6700; /* Orange */
+    color: #800000; /* Maroon color */ /* Gold color */
 }
 
 header p {
     font-size: 18px;
-    color: #FF8C42; /* Lighter Orange */
+    color: #800000; /* Maroon color */ /* Orange color */
 }
 
 /* Hero Section */
 .hero img {
-    width: 90%;
+    width: 100%;
     height: auto;
     display: block;
-    margin: auto;
 }
 
 /* Content Section */
@@ -72,7 +72,7 @@ header p {
 }
 
 .content h2, .experience h2, .gallery h2 {
-    color: #FF6700; /* Orange */
+    color: #800000;
 }
 
 .experience ul {
@@ -90,16 +90,7 @@ header p {
 
 .images img {
     width: 100%;
-    max-width: 250px; /* Reduced size */
-    border-radius: 8px;
-}
-
-/* Experience Images */
-.experience img {
-    display: block;
-    max-width: 90%; /* Reduced size */
-    height: auto;
-    margin: 20px auto;
+    max-width: 300px;
     border-radius: 8px;
 }
 
@@ -108,8 +99,8 @@ header p {
     display: block;
     text-align: center;
     padding: 10px 20px;
-    background: #FF6700; /* Orange */
-    color: white;
+    background: #800000;
+    color: #fff;
     text-decoration: none;
     margin: 20px auto;
     width: 200px;
@@ -117,7 +108,7 @@ header p {
 }
 
 .back-btn:hover {
-    background: #E65C00; /* Darker Orange */
+    background: #800000;
 }
 
 /* Footer */
@@ -141,12 +132,17 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .experience img {
-        width: 85%; /* Smaller images for mobile */
-    }
+}
+/* Background Blur and Gloom Effect */
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
 }
 
-/* Background Blur Effect */
 body::before {
     content: "";
     position: fixed;
@@ -154,7 +150,22 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/country-icons/ED.jpg') no-repeat center center/cover;
-    filter: blur(4px) brightness(80%);
+    background: url('images/country-icons/bohb.jfif') no-repeat center center/cover;
+    filter: blur(5px) brightness(75%);
     z-index: -1;
+}
+
+.experience img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centers the image */
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience img {
+        width: 90%; /* Makes the image responsive on smaller screens */
+    }
 }
